@@ -1,0 +1,257 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+}
+
+/* ================= NAVBAR ================= */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 80px;
+    background:#111827;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:bold;
+    color:#38bdf8;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:25px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.4s;
+    font-size:18px;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+/* ================= HERO ================= */
+
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+.profile-image{
+    width:230px;
+    height:230px;
+    border-radius:50%;
+    object-fit:cover;
+    border:6px solid #38bdf8;
+    box-shadow:0 0 30px #38bdf8;
+    margin-bottom:30px;
+}
+
+.hero h1{
+    font-size:30px;
+}
+
+.hero h2{
+    font-size:60px;
+    color:#38bdf8;
+    margin:10px 0;
+}
+
+.hero h3{
+    color:#94a3b8;
+    font-size:24px;
+}
+
+.hero p{
+    width:70%;
+    margin-top:20px;
+    line-height:30px;
+    font-size:18px;
+}
+
+/* ================= BUTTONS ================= */
+
+.buttons{
+    margin-top:35px;
+}
+
+.btn{
+    display:inline-block;
+    margin:10px;
+    padding:15px 35px;
+    background:#38bdf8;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    transition:.4s;
+}
+
+.btn:hover{
+    background:#0284c7;
+    transform:translateY(-5px);
+    box-shadow:0 0 20px #38bdf8;
+}
+
+/* ================= SECTION ================= */
+
+section{
+    padding:80px;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:40px;
+    color:#38bdf8;
+}
+
+/* ================= SKILLS ================= */
+
+.skill-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+}
+
+.skill-card{
+    background:#1e293b;
+    padding:35px;
+    text-align:center;
+    border-radius:15px;
+    transition:.4s;
+}
+
+.skill-card i{
+    font-size:45px;
+    color:#38bdf8;
+    margin-bottom:20px;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(56,189,248,.5);
+}
+
+/* ================= PROJECTS ================= */
+
+.project-card{
+    background:#1e293b;
+    padding:30px;
+    margin:20px 0;
+    border-radius:15px;
+    transition:.4s;
+}
+
+.project-card:hover{
+    transform:scale(1.03);
+    box-shadow:0 0 20px rgba(56,189,248,.5);
+}
+
+/* ================= CONTACT ================= */
+
+#contact{
+    text-align:center;
+}
+
+#contact p{
+    margin:20px;
+    font-size:20px;
+}
+
+.social{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    margin-top:30px;
+}
+
+.social a{
+    width:60px;
+    height:60px;
+    background:#1e293b;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    font-size:28px;
+    text-decoration:none;
+    transition:0.4s;
+}
+
+.social a:hover{
+    background:#38bdf8;
+    color:white;
+    transform:translateY(-8px);
+    box-shadow:0 0 20px #38bdf8;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:30px;
+    margin-top:50px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    margin-top:15px;
+}
+
+nav ul li{
+    margin:10px;
+}
+
+.hero h2{
+    font-size:40px;
+}
+
+.hero p{
+    width:95%;
+}
+
+section{
+    padding:40px 20px;
+}
+
+}
